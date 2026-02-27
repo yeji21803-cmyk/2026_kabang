@@ -6,29 +6,35 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="header.css">
+    <!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 <body>
-    <header class="con-min-width border-green">
-        <div class="con border-blue flex">
-            <div class="logo-box">
+    <header class="con-min-width">
+        <div class="con flex height-100p">
+            <div class="logo-box img-box flex-as-c">
                 <a href="#">
                     <img src="../imgs/imgi_18_logo_black.svg" alt="logo_img">
                 </a>
             </div>
 
-            <div class="border-red"></div>
+            <div class="flex-grow-1"></div>
 
-            <nav class="menu_box border-red">
-                <ul>
-                    <li><a href="#">은행소개</a></li>
-                    <li><a href="#">IR투자정보</a></li>
-                    <li><a href="#">상품안내</a></li>
-                    <li><a href="#">고객센터</a></li>
+            <nav class="menu_box border-pink">
+                <ul class="flex height-100p">
+                    <li><a href="#" class="flex flex-ai-c height-100p">은행소개</a></li>
+                    <li><a href="#" class="flex flex-ai-c height-100p">IR투자정보</a></li>
+                    <li><a href="#" class="flex flex-ai-c height-100p">상품안내</a></li>
+                    <li><a href="#" class="flex flex-ai-c height-100p">고객센터</a></li>
                 </ul>
             </nav>
 
-<div class="border-red">
-    <a href="#">관련사이트</a>
+<div class="drop_down flex-as-c">
+    <button class="drop_btn">
+        <span>관련사이트</span>
+        <span class="ico"><i class="fa-solid fa-angle-down"></i></span>
+    </button>
 </div>
 
 
@@ -36,3 +42,5 @@
     </header>
 </body>
 </html>
+
+

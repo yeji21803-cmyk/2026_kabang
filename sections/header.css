@@ -70,6 +70,10 @@ label[for] {
   align-items:center;
 }
 
+.flex-as-c {
+align-self: center;
+}
+
 .flex-grow-1 {
     flex-grow: 1;
 }
@@ -108,3 +112,40 @@ label[for] {
 ::selection {
     background-color: #FFE100;
 }
+
+/*헤더시작*/
+header{
+  height: 80px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+/*로고*/
+header .logo_box > a {
+  width: 116px;
+}
+
+/*dropdown menu*/
+header .drop_down .drop_btn {
+background: rgba(244, 244, 244, .8);
+color: rgb(68, 68, 68,);
+border: 1px solid rgba(229, 229, 229, .8);
+margin: 0 28px 0 14px;
+padding: 0 14px 0 18px;
+height: 40px;
+border-radius: 40px;
+font-size: 15px;
+cursor: pointer;
+}
+
+header .drop_down .drop_btn .ico {
+  display: line-block;
+  margin-left: 5px;
+  
+}
+
+
+
+
+
+/*메뉴*/
