@@ -133,7 +133,7 @@ header .logo_box > a {
   width: 116px;
 }
 
-/*메뉴*/
+/*메뉴박스 - 1차메뉴*/
 header .menu_box > ul > li > a {
   margin: 0 12px;
   padding: 0 12px;
@@ -154,6 +154,34 @@ header .menu_box > ul > li > a::after {
 header .menu_box > ul > li:hover > a::after {
   display: block;
 }
+
+/*메뉴박스 - 2차메뉴 */
+header .menu_box > ul > li > ul {
+  width: 100%;
+  height: 200px;
+  background-color: #ffe100;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+header .menu_box > ul > li:hover > ul {
+  display: block;
+}
+
+header .menu_box > ul > li:nth-child(2) > ul {
+  background-color: aquamarine;
+}
+
+header .menu_box > ul > li:nth-child(3) > ul {
+  background-color: rgb(57, 85, 76);
+}
+
+header .menu_box > ul > li:nth-child(4) > ul {
+  background-color: rgb(39, 43, 41);
+}
+
 
 /*dropdown menu*/
 header .drop_down .drop_btn {
