@@ -141,7 +141,7 @@ header .menu_box > ul > li > a {
 }
 
 header .menu_box ul > li > a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 header .menu_box > ul > li > a::after {
@@ -176,28 +176,47 @@ header .menu_box > ul > li:hover > div {
 }
 
 header .menu_box .menu_box-sec_menu > ul > li {
-  width: calc(100% / 6);
+	width: calc(100% / 6);
 }
 
 header .menu_box > ul > li:first-child .menu_box-sec_menu > ul > li {
-  width: calc(100% / 4);
+	width: calc(100% / 4);
 }
 
-  header .menu_box > ul > li:last-child .menu_box-sec_menu > ul > li {
-  width: calc(100% / 5);
+header .menu_box > ul > li:last-child .menu_box-sec_menu > ul > li {
+	width: calc(100% / 5);
 }
 
 header .menu_box .menu_box-sec_menu ul > li > a {
-  margin-bottom: 20px;
-  font-size: 17px;
-  text-align: center;
+	margin-bottom: 20px;
+	font-size: 17px;
+	text-align: center;
+}
+
+header .menu_box .menu_box-sec_menu ul li a[target="_blank"]::after {
+    content: "";
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background: url(../imgs/svg_line_outlink.svg);
+	background-size: 14px 14px;
+	margin-left: 8px;
+	margin-top: -2px;
+	vertical-align: middle;
+}
+
+header .menu_box .menu_box-sec_menu > ul > li > a[target="_blank"]::after {
+	width: 18px;
+	height: 18px;
+	background-size: 18px 18px;
+	margin-top: -5px;
 }
 
 header .menu_box .menu_box-sec_menu ul ul > li > a {
-  margin-bottom: 24px;
-  font-size: 13px;
-  text-align: center;
-  color: #444;
+	margin-bottom: 24px;
+	font-size: 13px;
+	text-align: center;
+	color: #444;
 }
 
 /*dropdown menu*/
@@ -217,16 +236,21 @@ header .drop_down .drop_btn {
 	cursor: pointer;
 }
 
+header .drop_down .drop_btn.rotate .ico {
+	transform: rotate(-180deg);
+}
+
 header .drop_down .drop_btn .ico {
 	display: inline-block;
 	margin-left: 5px;
+	transition: transform .2s ease;
 }
 
 header .drop_down .drop_down_content {
 	position: absolute;
 	top: 100%;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%) translateY(4px);
 	width: 240px;
 	margin-top: 29px;
 	line-height: 48px;
@@ -237,14 +261,16 @@ header .drop_down .drop_down_content {
 	text-align: left;
 	visibility: hidden;
 	opacity: 0;
+	transition: all .1s linear;
 }
 
 header .drop_down .drop_down_content.is-active {
 	visibility: visible;
 	opacity: 1;
+	transform: translateX(-50%) translateY(0);
 }
 
-header .drop_down .drop_down_content.is-active ul li a {
+header .drop_down .drop_down_content ul li a {
 	font-size: 13px;
 	display: block;
 	padding: 0 24px;
@@ -254,4 +280,17 @@ header .drop_down .drop_down_content.is-active ul li a {
 header .drop_down .drop_down_content.is-active ul li a:hover {
 	background-color: #f7f7f7;
 	text-decoration: underline;
-} 
+}
+
+header .drop_down .drop_down_content a[target="_blank"]::after {
+    content: "";
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url(../imgs/svg_line_outlink.svg);
+	background-size: 12px 12px;
+	margin-left: 8px;
+	margin-top: -3px;
+	vertical-align: middle;
+}
+
