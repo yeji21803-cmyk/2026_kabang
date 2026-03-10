@@ -201,6 +201,10 @@ header .menu_box .menu_box-sec_menu ul ul > li > a {
 }
 
 /*dropdown menu*/
+header .drop_down {
+	position: relative;
+}
+
 header .drop_down .drop_btn {
 	background: rgba(244, 244, 244, 0.8);
 	color: rgb(68, 68, 68);
@@ -217,3 +221,37 @@ header .drop_down .drop_btn .ico {
 	display: inline-block;
 	margin-left: 5px;
 }
+
+header .drop_down .drop_down_content {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 240px;
+	margin-top: 29px;
+	line-height: 48px;
+	border-radius: 6px;
+	background-color: #fff;
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+	/*왼쪽 정렬이 안돼서 임의로 넣음*/
+	text-align: left;
+	visibility: hidden;
+	opacity: 0;
+}
+
+header .drop_down .drop_down_content.is-active {
+	visibility: visible;
+	opacity: 1;
+}
+
+header .drop_down .drop_down_content.is-active ul li a {
+	font-size: 13px;
+	display: block;
+	padding: 0 24px;
+	box-sizing: border-box;
+}
+
+header .drop_down .drop_down_content.is-active ul li a:hover {
+	background-color: #f7f7f7;
+	text-decoration: underline;
+} 
