@@ -294,3 +294,17 @@ header .drop_down .drop_down_content a[target="_blank"]::after {
 	vertical-align: middle;
 }
 
+/*글로벌 로고*/
+header .global_logo {
+	display: inline-block;
+	width: 20px;
+}
+
+header .global_logo > img {
+	display: block;
+	width: 100%;
+}
+
+header .global_logo:hover > img {
+	opacity: .4;
+}
