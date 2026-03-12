@@ -5,10 +5,7 @@ html {
 }
 
 /* 노말라이즈 */
-body,
-ul,
-li,
-h1 {
+body, ul, li, h1, h3, p {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -117,7 +114,61 @@ label[for] {
 }
 
 /*메인배너 시작*/
+    .main_banner {
+		position: relative;
+	}
 
+    .main_banner > .banner_img {
+		width: 1200px;
+	}
 
+	.main_banner > .bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 720px;
+		z-index: -1;
+		background-color: #ffef6b;
+	}
 
-/*메인배너 끝*/
+	/*텍스트 시작*/
+	.main_banner > .text_box > h3 {
+		margin: 0;
+		font-size: 49px;
+		line-height: 1.4;
+		letter-spacing: -0.03em;
+	}
+
+	.main_banner > .text_box > p {
+		font-size: 16px;
+		line-height: 1.95;
+		opacity: .7;
+		margin-top: 14px;
+	}
+
+    .main_banner > .text_box > .btns {
+		margin-top: 50px;
+	}
+
+	.main_banner > .text_box > .btns > li:first-child {
+		margin-right: 12px;
+	}
+
+	.main_banner > .text_box > .btns > li {
+		display: block;
+		width: 178px;
+		height: 56px;
+		border: 1px solid rgba(255, 255, 255, .3);
+        border-radius: 12px;
+		font-size: 16.2px;
+		font-weight: bold;
+		line-height: 56px;
+		color: #333;
+		background-color: #fff;
+		text-align: center;
+	} 
+
+	/*텍스트 끝*/
+
+    /*메인배너 끝*/
