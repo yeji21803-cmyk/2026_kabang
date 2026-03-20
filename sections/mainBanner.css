@@ -138,6 +138,19 @@ label[for] {
 }
 
 /*텍스트 시작*/
+.main_banner .con .text_box {
+	position: absolute;
+	top: 130px;
+	left: 20px;
+}
+
+.main_banner > .text_box {
+    position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
 .main_banner > .text_box > h3 {
 	margin: 0;
 	font-size: 49px;
